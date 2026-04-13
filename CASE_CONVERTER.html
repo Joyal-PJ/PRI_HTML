@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>CASE CONVERTER</title>
+<script language = "javascript">
+//Function to Convert text to Uppercase 
+function convertToUpperCase()
+{
+var textInput  = document.myForm.textInput.value;
+document.myForm.textInput.value = textInput.toUpperCase();
+}
+//Function to Convert text to lowercase
+ function convertToLowerCase()
+{
+var textInput = document.myForm.textInput.value;
+document.myForm.textInput.value = textInput.toLowerCase();
+}
+</script>
+</head>
+<body bgcolor = "green">
+	<h2>lower case: the celebration of equality and simplicity in language and design</h2>
+<form name = "myForm">
+	<table>
+<tr>
+	<td>Provide a text</td>
+	<td><input type = "text" name = "textInput"></td>
+	</tr>
+<tr>
+	<td><input type = "button" onclick = "convertToUpperCase()" value = "To UpperCase"></td>
+	<td><input type = "button" onclick = "convertToLowerCase()" value = "To LowerCase"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
